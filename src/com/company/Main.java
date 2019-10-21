@@ -46,6 +46,15 @@ public class Main {
                     break;
                 }
                 case (2):{
+                    String buf= readUsingScanner("txt.txt");
+                    Task2 t2=new Task2(buf);
+                    System.out.println(t2.getText());
+                    t2.DigitSwaper();
+                    System.out.println(t2.getText());
+                    t2.End();
+                    System.out.println(t2.getText());
+                    t2.DigitSwaper3();
+                    System.out.println(t2.getText());
                     break;
                 }
                 case(3):{
