@@ -58,6 +58,17 @@ public class Main {
                     break;
                 }
                 case(3):{
+                    System.out.print("Введите дату: ");
+                    String data=in.nextLine();
+                    data=in.nextLine();
+                    Task3 t3=new Task3(data);
+                    if (t3.rightRus(t3.getData())){System.out.println("Дата корректна в русском формате");}
+                    if (t3.rightUS(t3.getData())){System.out.println("Дата корректна в американском формате");}
+                    if (!t3.rightUS(t3.getData()) && !t3.rightRus(t3.getData())) {System.out.println("Дата не коректна");}
+                    String buf= readUsingScanner("txt.txt");
+                    Task3 t31=new Task3(buf);
+                    System.out.println(buf);
+                    System.out.println(t31.swap());
                     break;
                 }
             }
